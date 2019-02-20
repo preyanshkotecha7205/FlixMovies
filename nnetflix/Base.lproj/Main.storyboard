@@ -21,7 +21,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="o5K-90-Byc" kind="relationship" relationship="viewControllers" id="WbL-IB-kKF"/>
-                        <segue destination="wJj-RF-9Cn" kind="relationship" relationship="viewControllers" id="IK2-Vz-Fvy"/>
+                        <segue destination="ohE-94-ncu" kind="relationship" relationship="viewControllers" id="Ykc-r1-20a"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdZ-Df-sUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,76 +159,67 @@
             </objects>
             <point key="canvasLocation" x="-556" y="-188"/>
         </scene>
-        <!--Movie Grid Controller-->
+        <!--SuperHero-->
         <scene sceneID="ONl-x0-lq5">
             <objects>
                 <viewController id="OwU-w4-pmR" customClass="MovieGridController" customModule="nnetflix" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Knc-8H-OSq" customClass="UICollectionViewCell">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Ph1-cI-6TS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3rc-Zb-SDc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4gL-iw-Wro">
-                                    <size key="itemSize" width="176" height="192"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="55B-iM-llE" customClass="MovieGridCell" customModule="nnetflix" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="176" height="192"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="192"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYi-PT-iRI">
-                                                    <rect key="frame" x="20" y="32" width="136" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <connections>
-                                            <outlet property="PosterView" destination="zYi-PT-iRI" id="Jdx-G1-cDO"/>
-                                            <outlet property="posterImage" destination="zYi-PT-iRI" id="XmC-W8-1v9"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                        </subviews>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="eoF-OY-MfD"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SSr-OU-Sjq"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DdM-20-C1d">
+                            <size key="itemSize" width="174" height="194"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieGridCell" id="RsM-Ix-iOi" customClass="MovieGridCell" customModule="nnetflix" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="174" height="194"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m6C-3i-1TH">
+                                            <rect key="frame" x="0.0" y="0.0" width="174" height="194"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <connections>
+                                    <outlet property="PosterView" destination="m6C-3i-1TH" id="I6t-Mq-atT"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="SuperHero" id="SSr-OU-Sjq"/>
                     <connections>
-                        <outlet property="collectionView" destination="3rc-Zb-SDc" id="ka8-IN-NnG"/>
+                        <outlet property="collectionView" destination="Ph1-cI-6TS" id="yD0-VV-B3r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5pm-lr-i7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700" y="-167.76611694152925"/>
+            <point key="canvasLocation" x="1605.5999999999999" y="-188.45577211394306"/>
         </scene>
         <!--Item-->
-        <scene sceneID="x9P-DB-kYs">
+        <scene sceneID="qga-Nu-Kdu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wJj-RF-9Cn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="U73-Kv-lfa"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ohE-94-ncu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dH5-xY-oyF"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7h8-aY-bdk">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MHy-sC-EOg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="OwU-w4-pmR" kind="relationship" relationship="rootViewController" id="QKl-n2-yom"/>
+                        <segue destination="OwU-w4-pmR" kind="relationship" relationship="rootViewController" id="V77-H5-hop"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FIM-8d-Dc1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WbY-Cs-l5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="-167.76611694152925"/>
+            <point key="canvasLocation" x="737" y="-188"/>
         </scene>
     </scenes>
     <resources>
