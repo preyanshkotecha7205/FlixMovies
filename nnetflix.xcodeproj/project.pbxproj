@@ -17,6 +17,9 @@
 		3C7CF67B22116DB600430CF7 /* nnetflixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CF67A22116DB600430CF7 /* nnetflixTests.swift */; };
 		3C7CF68622116DB600430CF7 /* nnetflixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CF68522116DB600430CF7 /* nnetflixUITests.swift */; };
 		3C7CF6942211767100430CF7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7CF6932211767100430CF7 /* MovieCell.swift */; };
+		3C8C87E1221D32B0000E40AA /* MovieGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C87E0221D32B0000E40AA /* MovieGridController.swift */; };
+		3C8C87E5221D3889000E40AA /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C87E4221D3889000E40AA /* MovieGridCell.swift */; };
+		3CE7C6342212764F00B347AD /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7C6332212764F00B347AD /* MovieDetailViewController.swift */; };
 		89A2391653D30EE1F314D5F3 /* Pods_nnetflixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AE8D10CBD4CEC22E50F706 /* Pods_nnetflixUITests.framework */; };
 		A4BBAFD644E7A7D85AA3378B /* Pods_nnetflixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4AD4B016057C538EF878F8 /* Pods_nnetflixTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,9 @@
 		3C7CF68522116DB600430CF7 /* nnetflixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nnetflixUITests.swift; sourceTree = "<group>"; };
 		3C7CF68722116DB600430CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C7CF6932211767100430CF7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3C8C87E0221D32B0000E40AA /* MovieGridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridController.swift; sourceTree = "<group>"; };
+		3C8C87E4221D3889000E40AA /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
+		3CE7C6332212764F00B347AD /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		60FA7AA7ABF0700C1152B2C5 /* Pods-nnetflixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nnetflixUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nnetflixUITests/Pods-nnetflixUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6A4AD4B016057C538EF878F8 /* Pods_nnetflixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nnetflixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A80236D64FCE45D02713DCE /* Pods-nnetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nnetflix.release.xcconfig"; path = "Pods/Target Support Files/Pods-nnetflix/Pods-nnetflix.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,13 +125,16 @@
 			isa = PBXGroup;
 			children = (
 				3C7CF66222116DB600430CF7 /* AppDelegate.swift */,
+				3CE7C6332212764F00B347AD /* MovieDetailViewController.swift */,
 				3C7CF66422116DB600430CF7 /* MoviesViewController.swift */,
 				3C7CF66622116DB600430CF7 /* Main.storyboard */,
+				3C8C87E4221D3889000E40AA /* MovieGridCell.swift */,
 				3C7CF66C22116DB600430CF7 /* Assets.xcassets */,
 				3C7CF66E22116DB600430CF7 /* LaunchScreen.storyboard */,
 				3C7CF67122116DB600430CF7 /* Info.plist */,
 				3C7CF66922116DB600430CF7 /* nnetflix.xcdatamodeld */,
 				3C7CF6932211767100430CF7 /* MovieCell.swift */,
+				3C8C87E0221D32B0000E40AA /* MovieGridController.swift */,
 			);
 			path = nnetflix;
 			sourceTree = "<group>";
@@ -400,9 +409,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7CF66B22116DB600430CF7 /* nnetflix.xcdatamodeld in Sources */,
+				3CE7C6342212764F00B347AD /* MovieDetailViewController.swift in Sources */,
+				3C8C87E1221D32B0000E40AA /* MovieGridController.swift in Sources */,
 				3C7CF66522116DB600430CF7 /* MoviesViewController.swift in Sources */,
 				3C7CF6942211767100430CF7 /* MovieCell.swift in Sources */,
 				3C7CF66322116DB600430CF7 /* AppDelegate.swift in Sources */,
+				3C8C87E5221D3889000E40AA /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

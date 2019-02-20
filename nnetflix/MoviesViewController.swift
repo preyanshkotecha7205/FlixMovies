@@ -48,6 +48,7 @@ class MoviesViewController: UIViewController ,UITableViewDataSource,UITableViewD
         
         cell.movieName.text = title
         cell.overview.text = synnopsis
+        
         let base = "https://image.tmdb.org/t/p/w185"
         let poster_path = movie["poster_path"] as! String
         let final_url = base + poster_path
@@ -58,6 +59,26 @@ class MoviesViewController: UIViewController ,UITableViewDataSource,UITableViewD
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+         print("loading up data")
+        
+//        find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableview.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+//        Pass the selected movie details to the view controller
+        let detailsViewController = segue.destination as! MovieDetailViewController
+        detailsViewController.movie = movie
+        tableview.deselectRow(at: indexPath, animated: true)
+//        additional setup after loading the view
+        
+        print(movie["title"])
+    }
+    
+    
     
     func fetch() {
         
